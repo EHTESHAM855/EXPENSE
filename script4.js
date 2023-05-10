@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwdfjoDWWAlJD6tKnFah1XTDPWgkDg2ynbvSNVUK7d7fOLsxhbnwd_WQCeiDY_mF54Rww/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbznQ0sjlbBubX0fiMl7jEoLQa6GaPdZTVfIawNpxu6AfgCh8-bt0UdtzriJKosEFDu-Yg/exec'
 const form = document.forms['Tousif-eXPENSE']
 
 form.addEventListener('submit', e => {
