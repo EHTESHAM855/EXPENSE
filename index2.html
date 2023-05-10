@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Expense</h1>
+    </header>
+
+
+
+    <div class="container">
+        <h2>Tousif</h2>
+        <form method="POST" name="Tousif-eXPENSE">
+            <div class="form-group">
+                <label for="product_name">Product Name:</label>
+                <input type="text" id="product_name" placeholder="Name the Product or area where spent..."
+                    name="product_name" class="input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date3" name="date" class="input" value="<?php echo date('Y-m-d'); ?>" required>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" placeholder='Amount Spent...' name="amount" class="input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <select id="category" name="category" class="input" required>
+                    <option value="">-- Select a category --</option>
+                    <option value="Food">Food</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Utilities">Utilities</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" placeholder="Describe if necessary" name="description" class="input"
+                    rows="3"></textarea>
+            </div>
+
+            <input type="submit" value="submit" class="btn-submit">
+
+        </form>
+    </div>
+
+
+
+
+    <script>
+        document.getElementById("date").valueAsDate = new Date();
+        document.getElementById("date2").valueAsDate = new Date();
+        document.getElementById("date3").valueAsDate = new Date();
+    </script>
+
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+    <script src="script4.js"></script>
+    <script src="script5.js"></script>
+</body>
+
+</html>
