@@ -204,16 +204,6 @@ select option {
 
 
 
-
-
-
-
-
-
-
-
-
-
 body {
     background-color: black;
   }
@@ -224,3 +214,5 @@ body {
     background-color: random-color;
     box-shadow: random-x random-y random-blur random-size random-color;
   }
+
+  
