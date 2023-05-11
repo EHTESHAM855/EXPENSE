@@ -22,7 +22,7 @@
 
     <div class="container">
         <h2>Ehtesham</h2>
-        <form method="POST" name="Ehtesham-eXPENSE">
+        <form method="POST" name="Ehtesham-eXPENSE" id='my-form'>
             <div class="form-group">
                 <label for="product_name">Product Name:</label>
                 <input type="text" id="product_name" placeholder="Name the Product or area where spent..."
@@ -68,6 +68,7 @@
             </div>
 
             <input type="submit" value="submit" class="btn-submit">
+            <div id="loading-spinner"></div>
         </form>
     </div>
 
@@ -77,7 +78,57 @@
     <script>
         document.getElementById("date").valueAsDate = new Date();
     </script>
+    
+    <script>
+const form = document.getElementById('my-form');
 
+const submitBtn = document.getElementById('btn-submit');
+
+const loadingSpinner = document.getElementById('loading-spinner');
+
+form.addEventListener('submit', (event) => {
+
+  event.preventDefault();
+
+  submitBtn.disabled = true; // disable the submit button
+
+  loadingSpinner.style.display = 'block'; // show the loading spinner
+
+  // submit the form data to Google Sheets using your code here
+
+  // after submission is complete, hide the loading spinner and re-enable the submit button
+
+  loadingSpinner.style.display = 'none';
+
+  submitBtn.disabled = false;
+
+});
+
+const form = document.getElementById('my-form');
+
+const submitBtn = document.getElementById('submit-btn');
+
+const loadingSpinner = document.getElementById('loading-spinner');
+
+form.addEventListener('submit', (event) => {
+
+  event.preventDefault();
+
+  submitBtn.disabled = true; // disable the submit button
+
+  loadingSpinner.style.display = 'block'; // show the loading spinner
+
+  // submit the form data to Google Sheets using your code here
+
+  // after submission is complete, hide the loading spinner and re-enable the submit button
+
+  loadingSpinner.style.display = 'none';
+
+  submitBtn.disabled = false;
+
+});
+
+</script>
     <script src="script2.js"></script>
 
     <script>
