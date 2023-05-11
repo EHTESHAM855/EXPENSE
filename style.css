@@ -215,4 +215,18 @@ body {
     box-shadow: random-x random-y random-blur random-size random-color;
   }
 
+#loading-spinner {
+
+  display: none;
+    color:blue;
+
+  /* add styles for the loading spinner here */
+
+}
+
+ 
+
+
+
+
   
